@@ -50,28 +50,31 @@ public class BinarySearch {
         return -1;
 
     }
-/* 
+ 
     public static int findOffsetRoated(int[] arr) {
 
         int low = 0;
         int high = arr.length-1;
 
-        while(low<=high) {
+        while(low<high) {
+            if(arr[low]<arr[high]) {
+                //already sorted
+                return low;
+            }
+
             int mid = low + (high - low)/2;
 
-            if(arr[mid]>=arr[high]) {
+            if(arr[mid]>arr[high]) {
 
                 low = mid+1;
              
-            } else if(arr[mid]<=arr[low]) {
-                high = mid-1;
-            } else {
-                return low;
-            }
+            } else  {
+                high = mid;
+            } 
         }
 
-        return 0;
+        return low;
 
     }
-        */
+        
 }

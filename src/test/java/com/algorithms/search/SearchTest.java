@@ -19,6 +19,7 @@ public class SearchTest {
         assertEquals(-1,BinarySearch.search(sortedArray, 100) );
         assertEquals(-1,BinarySearch.search(rotatedArray, 100, 4) );
 
-        //assertEquals(11, BinarySearch.findOffsetRoated(rotatedArray2));
+        assertEquals(11, BinarySearch.findOffsetRoated(rotatedArray2));
+        assertEquals(4, BinarySearch.findOffsetRoated(rotatedArray));
     }
 }
